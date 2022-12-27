@@ -1,0 +1,27 @@
+
+   { 
+    "defaultCommandTimeout": 90000,
+      "pageLoadTimeout": 600000,
+      "env": {
+        "application": null,
+        "level": null,
+        "testingtype": null,
+        "ALLOW_SCREENSHOT": false
+
+          },
+          "viewportWidth": 1200,
+      "viewportHeight": 800,
+      "screenshotOnRunFailure": true,
+      "chromeWebSecurity": false ,
+      "baseUrl":"http://www.google.com",
+      "reporter":"mochawesome",
+      "reporterOptions":{
+        "reportdir":"mochawesome-report",
+        "overwrite":false,
+        "html":true,
+        "json": false,
+        "charts": true,
+        "timestamp":"yyyy_mm_dd_HHMMss" 
+      },
+      "video": false
+    }

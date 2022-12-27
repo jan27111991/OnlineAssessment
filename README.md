@@ -1,0 +1,1 @@
+The tests are included in the Integration tests folder

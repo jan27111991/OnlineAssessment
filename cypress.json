@@ -13,7 +13,7 @@
       "viewportHeight": 800,
       "screenshotOnRunFailure": true,
       "chromeWebSecurity": false ,
-      "baseUrl":"http://www.google.com",
+      "baseUrl":"https://ebay.com",
       "reporter":"mochawesome",
       "reporterOptions":{
         "reportdir":"mochawesome-report",

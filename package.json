@@ -4,40 +4,39 @@
   "description": "Demo of cypress",
   "main": "index.js",
   "scripts": {
-    "pree2e": "node cypress/integration/JsonCreator.js ./cypress/fixtures/sample/sampletestdata.xlsx",
-    "e2e": "cypress run --spec cypress/integration/visual-test.js --browser chrome --no-exit",
+    "e2e": "cypress run --spec cypress/e2e/OnlineAssessment/connectors.cy.js --browser chrome --headed",
     "testrun": "cypress open --env application=Test,level=TL,testingtype=E2E",
-    "headless": "cypress run --spec 'cypress/integration/DriverScript.js' --headless --browser chrome --env application=Test,level=TL,testingtype=E2E"
+    "headless": "cypress run --spec 'cypress/e2e/OnlineAssessment/connectors.cy.js' --headless --browser chrome --env application=Test,level=TL,testingtype=E2E"
   },
-  "author": "Aravindh",
+  "author": "Janani",
   "license": "ISC",
   "devDependencies": {
-    "@alfonso-presa/soft-assert": "^0.5.0",
+    "@alfonso-presa/soft-assert": "^0.6.0",
     "@types/cypress-image-snapshot": "^3.1.6",
-    "cypress": "^5.4.0",
-    "cypress-file-upload": "^5.0.7",
-    "cypress-image-diff-js": "^1.22.0",
+    "cypress": "^12.3.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-image-diff-js": "^1.23.0",
     "cypress-image-snapshot": "^4.0.1",
-    "cypress-multi-reporters": "^1.4.0",
-    "cypress-wait-until": "^1.7.1",
-    "mocha": "^8.2.1",
-    "mochawesome": "^6.2.1",
-    "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.1.0"
+    "cypress-multi-reporters": "^1.6.2",
+    "cypress-wait-until": "^1.7.2",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
-    "@nrwl/cypress": "^14.8.3",
-    "chai": "^4.2.0",
+    "@nrwl/cypress": "^15.5.3",
+    "chai": "^4.3.7",
     "convert-excel-to-json": "^1.7.0",
     "cypress-image-compare": "^5.3.0",
     "cypress-image-diff": "^2.0.0",
     "cypress-xpath": "^1.6.1",
     "fs": "0.0.1-security",
-    "fs-extra": "^9.0.1",
-    "lodash": "^4.17.20",
-    "randomstring": "^1.2.1",
-    "soft-assert": "^0.2.3",
-    "xlsx": "^0.16.9"
+    "fs-extra": "^11.1.0",
+    "lodash": "^4.17.21",
+    "randomstring": "^1.2.3",
+    "soft-assert": "^0.2.6",
+    "xlsx": "^0.18.5"
   },
   "repository": {
     "type": "git"
